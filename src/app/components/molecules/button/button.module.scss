@@ -1,0 +1,61 @@
+@import "../../../styles/global.variables.scss";
+
+.button {
+  color: #fff;
+  font-weight: 200;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 4px;
+  padding: 0;
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  cursor: pointer;
+
+  &.bold {
+    font-weight: 700;
+  }
+
+  &.primary {
+    background-color: $liteflixBlackColor;
+    justify-content: center;
+    width: 248px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+  }
+
+  &.secondary {
+    background-color: $liteflixBlackColorOpacity;
+    justify-content: center;
+    width: 248px;
+    height: 56px;
+    display: flex;
+    border: 1px solid hsla(0, 0%, 100%, 0.5);
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  &.tertiary {
+    width: fit-content;
+    background-color: transparent;
+  }
+
+  &.white {
+    background-color: #fff;
+    color: #000;
+    width: 248px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.disabled {
+      background-color: #ffffffa8;
+      color: #000;
+      cursor: not-allowed;
+      font-weight: 400;
+    }
+  }
+}

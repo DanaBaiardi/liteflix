@@ -1,0 +1,27 @@
+@import "../../../styles/global.variables.scss";
+
+.hero {
+  margin-top: 446px;
+  .buttonsWrapper {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  .text20 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .title {
+    margin: 24px 0 32px 0;
+    color: $liteflixPrimaryColor;
+  }
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}

@@ -1,0 +1,56 @@
+@import "../../../styles/global.variables.scss";
+
+.wrapperContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+
+  // @keyframes slideInFromBottom {
+  //   0% {
+  //     transform: translateY(100%);
+  //   }
+  //   100% {
+  //     transform: translateY(0%);
+  //   }
+  // }
+
+  // @keyframes slideOutToTop {
+  //   0% {
+  //     transform: translateY(0%);
+  //   }
+  //   100% {
+  //     transform: translateY(-100%);
+  //   }
+  // }
+}
+
+.wrapper {
+  height: 440px;
+  width: 730px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $liteflixBlackColor;
+  padding: 24px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease-out;
+  transform: translateY(0%);
+  animation: slideInFromBottom 0.5s ease-in-out forwards;
+
+  &.shown {
+    background-color: yellow !important;
+    animation: slideOutToTop 0.5s ease-in-out forwards;
+  }
+
+  .wrapperHeader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

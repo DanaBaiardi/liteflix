@@ -1,0 +1,34 @@
+.loadingBarContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  .loadingText {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .loadingBar {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background-color: #ffffff80;
+
+    .loadingBarProgress {
+      background-color: #64eebc;
+      height: 10px;
+      position: absolute;
+      bottom: -2px;
+
+      &.error {
+        background-color: #FF0000;
+      }
+    }
+  }
+}

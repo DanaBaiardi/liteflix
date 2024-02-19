@@ -1,0 +1,16 @@
+.dragAndDropWrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 42px 70px;
+  border: 1px #fff dashed;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  border-spacing: 8px;
+  cursor: grab;
+
+  &.dragging {
+    background-color: #ffffff4f;
+  }
+}

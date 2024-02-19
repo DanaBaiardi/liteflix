@@ -1,0 +1,11 @@
+@import '../../../styles/global.variables.scss';
+
+.logo {
+    color: $liteflixPrimaryColor;
+    font-size: 34px;
+    cursor: pointer;
+
+    .light {
+        font-weight: 400;
+    }
+}

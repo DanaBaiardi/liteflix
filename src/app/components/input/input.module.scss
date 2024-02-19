@@ -1,0 +1,17 @@
+.input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    width: 248px;
+
+    &::placeholder {
+        font-weight: 700;
+    }
+
+    &:focus {
+        border: none;
+    }
+}

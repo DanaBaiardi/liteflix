@@ -1,0 +1,69 @@
+.menuListContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: red;
+
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+
+  .sidedrawer {
+    width: 761px;
+    height: 100vh;
+    padding: 32px 104px 0px 88px;
+    box-sizing: border-box;
+    background: #242424e5;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    animation: slideInFromRight 0.5s ease-in-out forwards;
+
+    &.closing {
+      animation: slideOutToLeft 0.5s ease-in-out forwards;
+    }
+
+    .listContainer {
+      width: 571px;
+      .asideHeader {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .rightWrapper {
+          display: flex;
+          align-items: center;
+          column-gap: 40px;
+        }
+      }
+
+      .optionsList {
+        margin-top: 85px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        padding: 0px;
+      }
+    }
+  }
+}

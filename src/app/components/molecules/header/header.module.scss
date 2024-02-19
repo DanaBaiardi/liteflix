@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .leftWrapper {
+    display: flex;
+    column-gap: 64px;
+    align-items: center;
+  }
+
+  .rightWrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+  }
+}

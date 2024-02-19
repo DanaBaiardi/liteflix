@@ -1,0 +1,12 @@
+@import "../../../styles/global.variables.scss";
+
+.dialog {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: $liteflixBlackColorOpacity;
+  z-index: 100;
+  padding: 0;
+  border: none;
+  outline: none;
+}

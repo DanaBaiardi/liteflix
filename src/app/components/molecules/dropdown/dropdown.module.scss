@@ -1,0 +1,27 @@
+.dropdownContainer {
+    position: relative;
+    width: fit-content;
+  
+    .content {
+     width: max-content;
+      height: fit-content;
+      position: absolute;
+      background-color: #242424;
+      z-index: 50;
+      padding: 24px;
+      right: -60%;
+      box-sizing: border-box;
+      top: 32px;
+  
+      &:after {
+        content: "";
+        position: absolute;
+        top: -16px;
+        right: 10%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #242424 transparent;
+      }
+    }
+  }
+  
